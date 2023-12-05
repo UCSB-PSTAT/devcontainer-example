@@ -1,0 +1,9 @@
+_commit: v1.1.0-2-geb18366
+_src_path: devcontainer-template/
+dev_language: Python
+include_examples: true
+project_name: base-template
+rootless_rootful: Alta (UCSB PSTAT Server)
+use_jupyterlab: false
+use_quarto: false
+use_vscode_ext: true

@@ -1,0 +1,31 @@
+{
+    "name": "base-template",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "app",
+
+    "workspaceFolder": "/home/jovyan/work",
+
+    "runArgs": [
+        "--memory=1.8g",
+        "--cpu-shares=300"
+    ],
+
+    "customizations": {
+
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/conda/bin/python"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-vscode.live-server",
+                "analytic-signal.preview-pdf"
+            ]
+        }
+
+    },
+    // Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+	"shutdownAction": "none"
+}
