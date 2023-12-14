@@ -17,7 +17,7 @@ services:
     user: root
     command:
       - jupyter
-      - server
+      - lab
       - --allow-root
       - --ip='0.0.0.0'
       - --ServerApp.allow_origin='*'

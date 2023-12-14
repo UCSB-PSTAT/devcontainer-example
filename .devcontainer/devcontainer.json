@@ -3,6 +3,8 @@
     "dockerComposeFile": ["docker-compose.yml"],
     "service": "app",
 
+    "forwardPorts": [8888],
+
     "workspaceFolder": "/home/jovyan/work",
 
     "runArgs": [
