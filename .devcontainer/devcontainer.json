@@ -15,8 +15,8 @@
     "runArgs": [
         "--user=1000:100",
         "--userns=keep-id:uid=1000,gid=100",
-        "--name=my-awesome-project", // needs to be unique
-        "--hostname=my-awesome-project_container" // needs to be unique
+        "--name=base-template", // needs to be unique
+        "--hostname=base-template-container" // needs to be unique
     ],
 
     "customizations": {
