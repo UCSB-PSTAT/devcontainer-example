@@ -1,20 +1,20 @@
 {
     "name": "base-template",
     "build": {
-        "dockerfile": "Dockerfile",
-        "options": ["--format=docker"]
+        "dockerfile": "Dockerfile"
+        // "options": ["--format=docker"]
     },
 
 	"updateRemoteUserUID": false,
     "overrideCommand": false,
     "shutdownAction": "none",
 
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind,z",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind", //,z",
     "workspaceFolder": "/home/jovyan/work",
 
     "runArgs": [
         "--user=1000:100",
-        "--userns=keep-id:uid=1000,gid=100",
+        //"--userns=keep-id:uid=1000,gid=100",
         "--name=base-template", // needs to be unique
         "--hostname=base-template-container" // needs to be unique
     ],
